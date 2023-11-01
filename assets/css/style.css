@@ -130,7 +130,7 @@ textarea:not([rows]) {
 /* Navigation list */
 .primary-navigation__list {
     display: flex;
-    --_gap: 6rem;
+    --_gap: 4rem;
 }
 
 .primary-navigation__item {
@@ -142,17 +142,22 @@ textarea:not([rows]) {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -0.5rem;
+    bottom: -0.75rem;
     height: 5px;
     width: 100%;
     background-color: var(--clr-yellow);
-    scale: 0 1;
-    transition: scale 0.7s cubic-bezier(.37,0,.45,.99);
+    transform-origin: center left;
+
+    scale: var(--_scale, 0) 1;
+    transition: 
+        scale 500ms cubic-bezier(.37,0,.45,.99) var(--_scale-delay, 0ms),
+        translate 500ms cubic-bezier(.37,0,.45,.99);
 }
 
-.primary-navigation__item:hover::after {
-    scale: 1 1;
+.primary-navigation__item:hover {
+    --_scale: 1;
 }
+
 
 
 /* Navigation Contact */
