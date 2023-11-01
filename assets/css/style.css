@@ -18,7 +18,7 @@
     --font-weight-bold: 700;
 
     /* Desktop font sizes */
-    --font-size-xsmall: 1.3rem;
+    --font-size-xsmall: 1rem;
     --font-size-small: 1.8rem;
     --font-size-medium: 2.6rem;
     --font-size-large: 9.5rem;
@@ -52,6 +52,7 @@ body {
     margin: 0;
     padding: 0;
     font: inherit;
+    text-decoration: none;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -106,4 +107,67 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
     scroll-margin-block: 5ex;
+}
+
+/* --------------------------------------------------------------------------- Header */
+
+/* ------------------------------------------------------------ Navigation */
+.primary-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 1.5rem;
+    font: var(--font-family-body);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xsmall);
+}
+
+.primary-navigation__logo {
+    margin-right: 20rem;
+}
+
+/* Navigation list */
+.primary-navigation__list {
+    display: flex;
+    --_gap: 6rem;
+}
+
+.primary-navigation__item {
+    padding-inline:  calc(var(--_gap) / 2);
+    position: relative;
+}
+
+.primary-navigation__item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    height: 5px;
+    width: 100%;
+    background-color: var(--clr-yellow);
+    scale: 0 1;
+    transition: scale 0.7s cubic-bezier(.37,0,.45,.99);
+}
+
+.primary-navigation__item:hover::after {
+    scale: 1 1;
+}
+
+
+/* Navigation Contact */
+.primary-navigation__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 5px solid var(--clr-yellow);
+    width: 12em;
+    height: 4em;
+    border-radius: 50%;
+    rotate: 5deg;
+}
+
+.contact__text {
+    rotate: -5deg;
 }
