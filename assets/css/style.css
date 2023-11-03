@@ -131,6 +131,7 @@ textarea:not([rows]) {
 /* ------------------------------------------------------------ Navigation */
 .primary-navigation {
     position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
