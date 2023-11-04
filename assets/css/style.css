@@ -127,6 +127,9 @@ textarea:not([rows]) {
 }
 
 /* --------------------------------------------------------------------------- Header */
+.header {
+    height: 10vh;
+}
 
 /* ------------------------------------------------------------ Navigation */
 .primary-navigation {
@@ -151,7 +154,7 @@ textarea:not([rows]) {
 .primary-navigation__list {
     display: flex;
     padding-top: 0.75rem;
-    gap: 4rem;
+    gap: 7.25rem;
 }
 
 .primary-navigation__item {
@@ -271,6 +274,59 @@ textarea:not([rows]) {
 .mobile-nav-toggle {
     display: none;
 }
+
+/* --------------------------------------------------------------------------- Hero Section */
+.hero {
+    position: relative;
+    height: 90vh;
+    background-color: var(--clr-light-grey);
+}
+
+.hero__title__wrapper {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    z-index: 4;
+}
+
+.hero__profile-img {
+    position: absolute;
+    bottom: 0;
+    right: 33.3%;
+    z-index: 2;
+}
+
+.hero__yellow-square {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    rotate: 15deg;
+    border: 5px solid var(--clr-yellow);
+    width: 45rem;
+    height: 67rem;
+    z-index: 3;
+}
+
+.hero__title {
+    font: var(--font-family-heading);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-large);
+    line-height: 7rem;
+}
+
+.hero__designer {
+    letter-spacing: 0.75rem;
+}
+
+.hero__name {
+    font: var(--font-family-heading);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-large);
+    line-height: 9rem;
+    padding-left: 8rem;
+}
+
+/* Hero Section Titles */
 
 /* --------------------------------------------------------------------------- Media Queries */
 @media (max-width: 45em) {
