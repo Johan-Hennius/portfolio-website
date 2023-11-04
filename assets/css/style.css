@@ -25,6 +25,7 @@
     --font-size-xlarge: 12rem;
 
     --font-size-mobile-xsmall: 1.5rem;
+    --font-size-mobile-large: 5rem;
 }
 
 /* Fonts */
@@ -126,14 +127,19 @@ textarea:not([rows]) {
     border: 0;
 }
 
+body {
+    background: #fff;
+}
+
 /* --------------------------------------------------------------------------- Header */
 .header {
-    height: 10vh;
+    
 }
 
 /* ------------------------------------------------------------ Navigation */
 .primary-navigation {
     position: fixed;
+    z-index: 9000;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -279,21 +285,21 @@ textarea:not([rows]) {
 .hero {
     position: relative;
     height: 90vh;
-    background-color: var(--clr-light-grey);
 }
 
 .hero__title__wrapper {
     position: absolute;
     bottom: 15%;
     left: 5%;
-    z-index: 4;
+    z-index: 3;
 }
 
+/* Hero Section Image */
 .hero__profile-img {
     position: absolute;
     bottom: 0;
     right: 33.3%;
-    z-index: 2;
+    z-index: 1;
 }
 
 .hero__yellow-square {
@@ -304,14 +310,16 @@ textarea:not([rows]) {
     border: 5px solid var(--clr-yellow);
     width: 45rem;
     height: 67rem;
-    z-index: 3;
+    z-index: 2;
 }
 
+/* Hero Section Titles */
 .hero__title {
     font: var(--font-family-heading);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-large);
     line-height: 7rem;
+    mix-blend-mode: difference;
 }
 
 .hero__designer {
@@ -324,12 +332,21 @@ textarea:not([rows]) {
     font-size: var(--font-size-large);
     line-height: 9rem;
     padding-left: 8rem;
+    mix-blend-mode: difference;
 }
 
-/* Hero Section Titles */
+.hero__name--small {
+    display: none;
+}
+
+.hero__name--full {
+    display: block;
+}
 
 /* --------------------------------------------------------------------------- Media Queries */
-@media (max-width: 45em) {
+@media (width < 720px) {
+
+    /* ------------------------------------------------------------ Navigation */
     .primary-navigation {
         display: none;
     } 
@@ -360,7 +377,7 @@ textarea:not([rows]) {
         display: block;
         position: fixed;
         z-index: 1000;
-        inset: 0 0 0 25%;
+        inset: 0 0 0 -5%;
 
         background-color: var(--clr-dark-blue);
         backdrop-filter: blur(1.25rem);
@@ -396,11 +413,72 @@ textarea:not([rows]) {
     }
 
     .primary-navigation__contact {
-        width: 10em;
+        width: 8em;
         height: 3em;
     }
 
     .contact__text {
         color: var(--clr-light-grey);
+    }
+
+    /* --------------------------------------------------------------------------- Hero Section */
+    .hero {
+        height: 80vh;
+    }
+
+    /* Hero Section Image */
+    .hero__title__wrapper {
+        position: absolute;
+        bottom: 6%;
+        z-index: 4;
+    }
+
+    .hero__profile-img {
+        z-index: 2;
+        width: 20rem;
+        bottom: -22%;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero__yellow-square {
+        position: absolute;
+        bottom: 0;
+        rotate: 15deg;
+        border: 5px solid var(--clr-yellow);
+        width: 20rem;
+        height: 33rem;
+        z-index: 3;
+    }
+
+    /* Hero Section Titles */
+    .hero__title {
+        font: var(--font-family-heading);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-mobile-large);
+        line-height: 4rem;
+        mix-blend-mode: difference;
+    }
+
+    .hero__designer {
+        letter-spacing: 0.4rem;
+    }
+
+    .hero__name {
+        font: var(--font-family-heading);
+        font-weight: var(--font-weight-regular);
+        font-size: var(--font-size-mobile-large);
+        line-height: 5.25rem;
+        padding-right: 0.4rem;
+        text-align: end;
+    }
+
+    .hero__name--full {
+        display: none;
+    }
+
+    .hero__name--small {
+        display: block;
     }
 }
