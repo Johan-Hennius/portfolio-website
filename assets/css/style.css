@@ -21,7 +21,7 @@
     --font-size-xsmall: 1rem;
     --font-size-small: 1.8rem;
     --font-size-medium: 2.6rem;
-    --font-size-mediumLarge: 5.5rem;
+    --font-size-mediumLarge: 7.5rem;
     --font-size-large: 9.5rem;
     --font-size-xlarge: 12rem;
 
@@ -280,7 +280,7 @@ body {
 /* --------------------------------------------------------------------------- Hero Section */
 .hero {
     position: relative;
-    height: 90vh;
+    height: 92vh;
     padding-top: 5rem;
 }
 
@@ -328,7 +328,7 @@ body {
     width: 26rem;
     height: 40rem;
     transition: rotate 1s cubic-bezier(.37, 0, .45, .99);
-    z-index: 1;
+    z-index: 2;
 }
 
 .hero__yellow-square:hover {
@@ -363,6 +363,79 @@ body {
 
 .hero__name--full {
     display: block;
+}
+
+/* ------------------------------------------------------------ Work */
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-light-blue);
+    padding: 8rem 8rem;
+}
+
+.work__grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 33%);
+    align-items: center;
+    justify-items: center;
+}
+
+.work__grid__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding: 1rem;
+    background-color: var(--clr-light-grey);
+    width: minmax(28rem, 31rem);
+    aspect-ratio: 1;
+}
+
+/* .work__grid__box--start {
+    justify-self: end;
+}
+
+.work__grid__box--end {
+    justify-self: start;
+} */
+
+.work__title {
+    position: absolute;
+    rotate: -90deg;
+    left: -3rem;
+    color: var(--clr-dark-blue);
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-mediumLarge);
+    font-weight: var(--font-weight-bold);
+}
+
+.work__grid__number {
+    position: absolute;
+    top: -5.5rem;
+    right: 1rem;
+    color: var(--clr-dark-blue);
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+}
+
+.work__grid__title {
+    color: var(--clr-dark-blue);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-regular);
+}
+
+.work__grid__text {
+    color: var(--clr-dark-blue);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-xsmall);
+    font-weight: var(--font-weight-regular);
+    padding-left: 1rem;
 }
 
 /* ------------------------------------------------------------ Footer */
