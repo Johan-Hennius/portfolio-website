@@ -536,17 +536,21 @@ body {
         color: var(--clr-light-blue);
     }
 
-    .primary-navigation__contact {
+    .primary-navigation__button {
         width: 8em;
         height: 3em;
     }
 
-    .contact__text {
+    .button__text {
         color: var(--clr-light-grey);
     }
 
     /* --------------------------------------------------------------------------- Hero Section */
     .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
         height: 80vh;
     }
 
@@ -558,18 +562,24 @@ body {
     }
 
     .hero__profile-img {
+        position: relative;
         z-index: 2;
-        width: 20rem;
-        bottom: -22%;
-        top: 43%;
+        padding-top: 1rem;
+        /* bottom: -22%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
+    }
+
+    .hero__profile-img > img {
+        filter: opacity(0.9);
+        height: 50%;
     }
 
     .hero__yellow-square {
         position: absolute;
         bottom: 0;
-        rotate: 15deg;
+        rotate: 5deg;
         border: 5px solid var(--clr-yellow);
         width: 20rem;
         height: 33rem;
@@ -582,7 +592,6 @@ body {
         font-weight: var(--font-weight-bold);
         font-size: var(--font-size-mobile-large);
         line-height: 4rem;
-        mix-blend-mode: difference;
     }
 
     .hero__designer {
