@@ -132,6 +132,13 @@ body {
     background: #fff;
 }
 
+.title__xlarge {
+    color: var(--clr-dark-blue);
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-xlarge);
+    font-weight: var(--font-weight-bold); 
+}
+
 .title__large {
     color: var(--clr-dark-blue);
     font-family: var(--font-family-heading);
@@ -292,73 +299,55 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    bottom: 22.3rem;
+    align-items: flex-start;
+    justify-content: center;
+    bottom: 60%;
     height: 14rem;
     width: 100%;
-    padding-right: 10.4rem;
+    padding: 0 8rem;
     z-index: 2;
 }
 
 .hero__name__wrapper {
     position: absolute;
-    bottom: 20rem;
+    bottom: 15%;
     z-index: 4;
     width: 100%;
-    padding: 0 8rem;
+    padding: 0 15.5rem;
 }
 
 /* Hero Section Image */
 .hero__profile-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
     width: 100%;
-    padding-top: 8rem;
-    z-index: 1;
+    z-index: -1;
 }
 
 .hero__profile-img > img {
+    position: absolute;
+    bottom: -90rem;
+    right: 31%;
     filter: opacity(0.9);
     transform-origin: 0 100%;
-    height: 40rem;
+    height: 84rem;
     transition: height 1s cubic-bezier(.37, 0, .45, .99);
 }
 
-.hero__profile-img > img:hover {
-    height: 41rem;
-}
-
-/* .hero__yellow-square {
-    position: absolute;
-    bottom: 20.5rem;
-    rotate: -5deg;
-    border: 5px solid var(--clr-yellow);
-    width: 26rem;
-    height: 40rem;
-    transition: rotate 1s cubic-bezier(.37, 0, .45, .99);
-    z-index: 2;
-}
-
-.hero__yellow-square:hover {
-    rotate: 5deg;
-} */
 
 /* Hero Section Titles */
 .hero__title {
-    line-height: 7rem;
+    line-height: 8.5rem;
     mix-blend-mode: difference;
 }
 
 .hero__designer {
-    letter-spacing: -0.2rem;
-    padding-left: 6.6rem;
+    letter-spacing: -0.5rem;
+    padding-left: 10.2rem;
 }
 
 .hero__name {
     line-height: 7rem;
-    text-align: end;
+    text-align: start;
 }
 
 .hero__name--small {
