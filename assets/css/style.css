@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
 /* Custom Properties */
 :root {
     /* Colours */
@@ -8,19 +11,20 @@
 
     /* Font family */
     --font-family-primary: font-family: 'Lora', serif;
-    --font-family-secondary: font-family: 'Quattrocento', serif;
+    --font-family-secondary: font-family: 'Plus Jakarta Sans', sans-serif;
 
     --font-family-heading: var(--font-family-primary);
     --font-family-body: var(--font-family-secondary);
 
     /* Font weights */
     --font-weight-regular: 400;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
 
     /* Desktop font sizes */
-    --font-size-xsmall: 1rem;
-    --font-size-small: 1.8rem;
-    --font-size-medium: 2.6rem;
+    --font-size-xsmall: 1.3rem;
+    --font-size-small: 2.1rem;
+    --font-size-medium: 3.5rem;
     --font-size-mediumLarge: 7.5rem;
     --font-size-large: 9.5rem;
     --font-size-xlarge: 12rem;
@@ -28,9 +32,6 @@
     --font-size-mobile-xsmall: 1.5rem;
     --font-size-mobile-large: 5rem;
 }
-
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Quattrocento:wght@400;700&display=swap');
 
 /* Box sizing rules */
 *,
@@ -144,6 +145,13 @@ body {
     font-family: var(--font-family-heading);
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
+}
+
+.title__medium {
+    color: var(--clr-dark-blue);
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
 }
 
 .sub-title {
@@ -301,7 +309,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    bottom: 60%;
+    bottom: 33%;
     height: 14rem;
     width: 100%;
     padding: 0 8rem;
@@ -310,10 +318,10 @@ body {
 
 .hero__name__wrapper {
     position: absolute;
-    bottom: 15%;
+    bottom: 7%;
+    left: 27.5%;
     z-index: 4;
     width: 100%;
-    padding: 0 15.5rem;
 }
 
 /* Hero Section Image */
@@ -360,6 +368,7 @@ body {
 
 /* ------------------------------------------------------------ Work */
 .work {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -384,7 +393,7 @@ body {
     justify-content: end;
     padding: 1rem;
     background-color: var(--clr-light-grey);
-    width: 35rem;
+    width: 45rem;
     aspect-ratio: 1;
 }
 
@@ -522,13 +531,13 @@ body {
 .news__title {
     position: absolute;
     rotate: -90deg;
-    left: -0.5rem;
+    left: 0.2rem;
     z-index: 1;
 }
 
 .news__image {
     background-color: var(--clr-light-grey);
-    width: 35rem;
+    width: 45rem;
     aspect-ratio: 1;
 }
 
