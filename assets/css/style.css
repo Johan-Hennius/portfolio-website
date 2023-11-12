@@ -127,7 +127,7 @@ textarea:not([rows]) {
 }
 
 body {
-    background: #fff;
+    /* background: #fff; */
     overflow-x: hidden;
 }
 
@@ -591,6 +591,24 @@ body {
 .footer__email {
     margin-top: 3.5rem;
 }
+
+/* ------------------------------------------------------------ Background */
+.background__graph-paper {
+    background-color: #fafafa;
+    background-image: 
+        linear-gradient(
+            var(--clr-dark-blue) 3px,
+            transparent 0.5px
+        ),
+        linear-gradient(
+            90deg,
+            var(--clr-dark-blue) 3px,
+            transparent 0.5px
+        );
+    background-size: 2rem 2rem;
+    background-position: center;
+}
+
 
 /* --------------------------------------------------------------------------- Media Queries */
 /* XLarge screen */
