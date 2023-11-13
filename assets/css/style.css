@@ -403,10 +403,9 @@ body {
 
 .hero {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     height: 91vh;
     padding: 12rem 8rem 5rem 8rem;
-    gap: 6rem;
 }
 
 .hero__title__wrapper {
