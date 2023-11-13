@@ -15,205 +15,221 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 
-<body class="background__graph-paper">
+<body class="background__graph-paper diagonal__vertical">
 
-    <!--Navigation-->
-    <header class="header">
-        <nav class="primary-navigation">
-            <!--Logo-->
-            <div class="primary-navigation__logo">
-                <a href="index.html">
-                    <img src="assets/logos/jbh-logo-70px-04.png" alt="Johan B Hennius black bear logo icon">
-                </a>
-            </div>
-            <!--Nav List-->
-            <ul class="primary-navigation__list" role="list">
-                <li>
-                    <a href="index.html" class="primary-navigation__item active">Home</a>
-                </li>
-                <li>
-                    <a href="#work-section" class="primary-navigation__item">Work</a>
-                </li>
-                <li>
-                    <a href="#about-section" class="primary-navigation__item">About</a>
-                </li>
-                <li>
-                    <a href="#news-section" class="primary-navigation__item">News</a>
-                </li>
-            </ul>
-            <!--Contact-->
-            <div class="primary-navigation__button">
-                <span class="button__text">Contact</span>
-            </div>
-        </nav>
-        <!--Mobile Nav-->
-        <nav class="mobile-navigation">
-            <!--Logo-->
-            <div class="primary-navigation__logo mobile-navigation__logo">
-                <a href="index.html">
-                    <img src="assets/logos/jbh-logo-70px.png" alt="Johan B Hennius black bear logo icon">
-                </a>
-            </div>
-            <!--nav toggle-->
-            <button class="mobile-nav-toggle" aria-controls="mobile-navigation" aria-expanded="false"><span
-                    class="sr-only">Menu</span>Menu</i></button>
-            <!--Nav List-->
-            <ul class="mobile-navigation__list" role="list" data-visible="false">
-                <li>
-                    <a href="index.html" class="primary-navigation__item active">Home</a>
-                </li>
-                <li>
-                    <a href="#work-section" class="primary-navigation__item">Work</a>
-                </li>
-                <li>
-                    <a href="#about-section" class="primary-navigation__item">About</a>
-                </li>
-                <li>
-                    <a href="#news-section" class="primary-navigation__item">News</a>
-                </li>
+    <div class="diagonal-bg__vertical">
+
+        <!--Navigation-->
+        <header class="header">
+            <nav class="primary-navigation">
+                <!--Logo-->
+                <div class="primary-navigation__logo">
+                    <a href="index.html">
+                        <img src="assets/logos/jbh-logo-70px-04.png" alt="Johan B Hennius black bear logo icon">
+                    </a>
+                </div>
+                <!--Nav List-->
+                <ul class="primary-navigation__list" role="list">
+                    <li>
+                        <a href="index.html" class="primary-navigation__item active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#work-section" class="primary-navigation__item">Work</a>
+                    </li>
+                    <li>
+                        <a href="#about-section" class="primary-navigation__item">About</a>
+                    </li>
+                    <li>
+                        <a href="#news-section" class="primary-navigation__item">News</a>
+                    </li>
+                </ul>
                 <!--Contact-->
-                <li>
-                    <div class="primary-navigation__button">
-                        <span class="button__text">Contact</span>
+                <div class="primary-navigation__button">
+                    <span class="button__text">Contact</span>
+                </div>
+            </nav>
+            <!--Mobile Nav-->
+            <nav class="mobile-navigation">
+                <!--Logo-->
+                <div class="primary-navigation__logo mobile-navigation__logo">
+                    <a href="index.html">
+                        <img src="assets/logos/jbh-logo-70px.png" alt="Johan B Hennius black bear logo icon">
+                    </a>
+                </div>
+                <!--nav toggle-->
+                <button class="mobile-nav-toggle" aria-controls="mobile-navigation" aria-expanded="false"><span
+                        class="sr-only">Menu</span>Menu</i></button>
+                <!--Nav List-->
+                <ul class="mobile-navigation__list" role="list" data-visible="false">
+                    <li>
+                        <a href="index.html" class="primary-navigation__item active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#work-section" class="primary-navigation__item">Work</a>
+                    </li>
+                    <li>
+                        <a href="#about-section" class="primary-navigation__item">About</a>
+                    </li>
+                    <li>
+                        <a href="#news-section" class="primary-navigation__item">News</a>
+                    </li>
+                    <!--Contact-->
+                    <li>
+                        <div class="primary-navigation__button">
+                            <span class="button__text">Contact</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Hero section-->
+        <section class="hero">
+            <div class="hero__title__wrapper">
+                <h2 class="hero__title title__large">Developer</h2>
+                <h2 class="hero__title hero__designer title__large">Designer</h2>
+            </div>
+            <div class="hero__name__wrapper">
+                <h1 class="hero__name hero__name--full title__large">Johan B Hennius</h1>
+                <h1 class="hero__name hero__name--small">Johan</h1>
+            </div>
+            <div class="hero__profile-img">
+                <img src="assets/images/jbh-photo-w723-h1086.png" alt="Photo of Johan B Hennius sitting in a garden">
+                <div class="hero__yellow-square"></div>
+            </div>
+        </section>
+
+        <!--Work section-->
+        <section class="work diagonal-bg__horizontal">
+            <h2 class="work__title title__large">
+                Work
+            </h2>
+            <div class="work__grid">
+                <div class="work__grid__box work__grid__box--start">
+                    <h3 class="work__grid__number title__xlarge">01</h3>
+                    <p class="work__grid__title sub-title">Website</p>
+                    <p class="work__grid__text text__xsmall">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Optio
+                        repellendus
+                        quasi neque.</p>
+                </div>
+                <div class="work__grid__box work__grid__box--mid">
+                    <h3 class="work__grid__number title__xlarge">02</h3>
+                    <p class="work__grid__title sub-title">App</p>
+                    <p class="work__grid__text text__xsmall">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Optio
+                        repellendus
+                        quasi neque.</p>
+                </div>
+                <div class="work__grid__box work__grid__box--end">
+                    <h3 class="work__grid__number title__xlarge">03</h3>
+                    <p class="work__grid__title sub-title">Blog</p>
+                    <p class="work__grid__text text__xsmall">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Optio
+                        repellendus
+                        quasi neque.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--About me section-->
+        <section class="about-me">
+            <div class="about-me__title__wrapper">
+                <h2 class="about-me__title title__large">About me</h2>
+                <div class="about-me__line horizontal"></div>
+            </div>
+            <div class="about-me__text sub-title">
+                Junior software developer with a diploma in full stack software development from the Code Institute and
+                6
+                years experience in the design and animation Industry. Desire to grow as part of a team to utilise my
+                strong
+                creative thinking, problem solving, and communication skills to create products that have a positive
+                impact
+                on our world.
+            </div>
+            <div class="about-me__grid about-me__flex-wrapper">
+                <div class="about-me__flex">
+                    <h3 class="about-me__grid__title--1 sub-title">Software Development</h3>
+                    <div class="about-me__details__grid">
+                        <h4 class="text__xsmall text__xsmall--bold">Technologies</h4>
+                        <p class="text__xsmall span-2__column">html5, css3, JavaScript, Python</p>
+                        <h4 class="text__xsmall text__xsmall--bold">Databases</h4>
+                        <p class="text__xsmall span-2__column">MySQL</p>
+                        <h4 class="text__xsmall text__xsmall--bold">Frameworks</h4>
+                        <p class="text__xsmall span-2__column">Django, Bootstrap</p>
+                        <h4 class="text__xsmall text__xsmall--bold">Version Control</h4>
+                        <p class="text__xsmall span-2__column">Git, GitHub</p>
                     </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!--Hero section-->
-    <section class="hero">
-        <div class="hero__title__wrapper">
-            <h2 class="hero__title title__large">Developer</h2>
-            <h2 class="hero__title hero__designer title__large">Designer</h2>
-        </div>
-        <div class="hero__name__wrapper">
-            <h1 class="hero__name hero__name--full title__large">Johan B Hennius</h1>
-            <h1 class="hero__name hero__name--small">Johan</h1>
-        </div>
-        <div class="hero__profile-img">
-            <img src="assets/images/jbh-photo-w723-h1086.png"
-                alt="Photo of Johan B Hennius sitting in a garden">
-            <!-- <div class="hero__yellow-square"></div> -->
-        </div>
-    </section>
-
-    <!--Work section-->
-    <section class="work">
-        <h2 class="work__title title__large">
-            Work
-        </h2>
-        <div class="work__grid">
-            <div class="work__grid__box work__grid__box--start">
-                <h3 class="work__grid__number title__xlarge">01</h3>
-                <p class="work__grid__title sub-title">Website</p>
-                <p class="work__grid__text text__xsmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                    repellendus
-                    quasi neque.</p>
-            </div>
-            <div class="work__grid__box work__grid__box--mid">
-                <h3 class="work__grid__number title__xlarge">02</h3>
-                <p class="work__grid__title sub-title">App</p>
-                <p class="work__grid__text text__xsmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                    repellendus
-                    quasi neque.</p>
-            </div>
-            <div class="work__grid__box work__grid__box--end">
-                <h3 class="work__grid__number title__xlarge">03</h3>
-                <p class="work__grid__title sub-title">Blog</p>
-                <p class="work__grid__text text__xsmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                    repellendus
-                    quasi neque.</p>
-            </div>
-        </div>
-    </section>
-
-    <!--About me section-->
-    <section class="about-me">
-        <div class="about-me__title__wrapper">
-            <h2 class="about-me__title title__large">About me</h2>
-            <div class="about-me__line horizontal"></div>
-        </div>
-        <div class="about-me__text sub-title">
-            Junior software developer with a diploma in full stack software development from the Code Institute and 6
-            years experience in the design and animation Industry. Desire to grow as part of a team to utilise my strong
-            creative thinking, problem solving, and communication skills to create products that have a positive impact
-            on our world.
-        </div>
-        <div class="about-me__grid about-me__flex-wrapper">
-            <div class="about-me__flex">
-                <h3 class="about-me__grid__title--1 sub-title">Software Development</h3>
-                <div class="about-me__details__grid">
-                    <h4 class="text__xsmall text__xsmall--bold">Technologies</h4>
-                    <p class="text__xsmall span-2__column">html5, css3, JavaScript, Python</p>
-                    <h4 class="text__xsmall text__xsmall--bold">Databases</h4>
-                    <p class="text__xsmall span-2__column">MySQL</p>
-                    <h4 class="text__xsmall text__xsmall--bold">Frameworks</h4>
-                    <p class="text__xsmall span-2__column">Django, Bootstrap</p>
-                    <h4 class="text__xsmall text__xsmall--bold">Version Control</h4>
-                    <p class="text__xsmall span-2__column">Git, GitHub</p>
+                </div>
+                <div class="about-me__flex">
+                    <h3 class="about-me__grid__title--2 sub-title">Design</h3>
+                    <div class="about-me__details__grid">
+                        <h4 class="text__xsmall text__xsmall--bold">Software</h4>
+                        <p class="text__xsmall span-2__column">Illustrator, After Effects, XD, Premier Pro, Photshop</p>
+                        <h4 class="text__xsmall text__xsmall--bold">Skills</h4>
+                        <p class="text__xsmall span-2__column">Motion Design, Graphic Design, Web Design, Illustration
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="about-me__flex">
-                <h3 class="about-me__grid__title--2 sub-title">Design</h3>
-                <div class="about-me__details__grid">
-                    <h4 class="text__xsmall text__xsmall--bold">Software</h4>
-                    <p class="text__xsmall span-2__column">Illustrator, After Effects, XD, Premier Pro, Photshop</p>
-                    <h4 class="text__xsmall text__xsmall--bold">Skills</h4>
-                    <p class="text__xsmall span-2__column">Motion Design, Graphic Design, Web Design, Illustration</p>
+        </section>
+
+        <!--News section-->
+        <section class="news diagonal-bg__horizontal">
+            <h2 class="news__title title__large">News</h2>
+            <div class="news__grid">
+                <a href="news.html">
+                    <img src="#" alt="Alt text" class="news__image">
+                </a>
+                <div class="news__wrapper">
+                    <h3 class="news__subtitle sub-title">
+                        Why change?
+                    </h3>
+                    <p class="news__text text__xsmall">
+                        Since studying animation at University, I have had a growing interest in web development but
+                        have
+                        felt that I was not smart enough to grasp the concepts.
+                        After I graduated, I was fortunate enough to work at Tree Top Films where I had the opportunity
+                        to
+                        work as part of a team and hone my design and animation skills in an exciting team.
+                        While at Tree Top Films, my interest in web development grew and I was able to dip my toe into
+                        the
+                        development waters with thanks to After Effects expressions.
+                        This growing fire inside eventually led me to leave Tree Top Films and work as a freelancer
+                        while I
+                        studied full stack software development at Code Institute.
+                        Now that I have built a strong, foundational programming knowledge I am confident to combine my
+                        technical and creative skills in the tech industry.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--News section-->
-    <section class="news">
-        <h2 class="news__title title__large">News</h2>
-        <div class="news__grid">
-            <a href="news.html">
-                <img src="#" alt="Alt text" class="news__image">
-            </a>
-            <div class="news__wrapper">
-                <h3 class="news__subtitle sub-title">
-                    Why change?
-                </h3>
-                <p class="news__text text__xsmall">
-                    Since studying animation at University, I have had a growing interest in web development but have
-                    felt that I was not smart enough to grasp the concepts.
-                    After I graduated, I was fortunate enough to work at Tree Top Films where I had the opportunity to
-                    work as part of a team and hone my design and animation skills in an exciting team.
-                    While at Tree Top Films, my interest in web development grew and I was able to dip my toe into the
-                    development waters with thanks to After Effects expressions.
-                    This growing fire inside eventually led me to leave Tree Top Films and work as a freelancer while I
-                    studied full stack software development at Code Institute.
-                    Now that I have built a strong, foundational programming knowledge I am confident to combine my
-                    technical and creative skills in the tech industry.
-                </p>
+        <!--Footer section-->
+        <footer class="footer">
+            <div class="footer__navigation">
+                <a href="index.html" class="primary-navigation__logo">
+                    <img src="assets/logos/jbh-logo-70px-lgrey-07.png" alt="Johan B Hennius black bear logo icon">
+                </a>
+                <span class="footer__copyright text__xsmall">&#169; Johan B Hennius</span>
+                <div class="footer__contact-links">
+                    <a href="https://github.com/Johan-Hennius" target="_blank"
+                        class="footer__github--desktop text__xsmall">GitHub</a>
+                    <a href="https://www.linkedin.com/in/johan-b-hennius/" target="_blank"
+                        class="footer__linkedin--desktop text__xsmall">LinkedIn</a>
+                    <a href="mailto:johanbhennius@outlook.com"
+                        class="footer__email text__xsmall">johanbhennius@outlook.com</a>
+                </div>
+                <div class="primary-navigation__button">
+                    <span class="button__text button__text--lgrey text__xsmall">CV</span>
+                </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <!--Footer section-->
-    <footer class="footer">
-        <div class="footer__navigation">
-            <a href="index.html" class="primary-navigation__logo">
-                <img src="assets/logos/jbh-logo-70px-lgrey-07.png" alt="Johan B Hennius black bear logo icon">
-            </a>
-            <span class="footer__copyright text__xsmall">&#169; Johan B Hennius</span>
-            <div class="footer__contact-links">
-                <a href="https://github.com/Johan-Hennius" target="_blank" class="footer__github--desktop text__xsmall">GitHub</a>
-                <a href="https://www.linkedin.com/in/johan-b-hennius/" target="_blank"
-                    class="footer__linkedin--desktop text__xsmall">LinkedIn</a>
-                <a href="mailto:johanbhennius@outlook.com" class="footer__email text__xsmall">johanbhennius@outlook.com</a>
-            </div>
-            <div class="primary-navigation__button">
-                <span class="button__text button__text--lgrey text__xsmall">CV</span>
-            </div>
-        </div>
-    </footer>
+        <!--Javascript-->
+        <script src="assets/js/script.js"></script>
 
-    <!--Javascript-->
-    <script src="assets/js/script.js"></script>
+    </div>
 </body>
 
 </html>
