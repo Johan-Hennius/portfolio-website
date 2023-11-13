@@ -25,9 +25,6 @@
     --font-size-mediumLarge: 7.5rem;
     --font-size-large: 9.5rem;
     --font-size-xlarge: 12rem;
-
-    --font-size-mobile-xsmall: 1.5rem;
-    --font-size-mobile-large: 5rem;
 }
 
 /* Box sizing rules */
@@ -656,8 +653,16 @@ body {
 
 /* --------------------------------------------------------------------------- Media Queries */
 /* XLarge screen */
-@media (max-width: 1840px) {
-    
+@media (max-width: 1920px) {
+    :root {
+        /* Desktop font sizes */
+    --font-size-xsmall: 1rem;
+    --font-size-small: 1.9rem;
+    --font-size-medium: 2.5rem;
+    --font-size-mediumLarge: 6.5rem;
+    --font-size-large: 7.5rem;
+    --font-size-xlarge: 10rem;
+    }
 }
 
 /* Large screen */
