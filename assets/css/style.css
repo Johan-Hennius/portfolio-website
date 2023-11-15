@@ -389,6 +389,16 @@ body {
     padding-top: 4rem;
 }
 
+/* --------------------------------------------------------------------------- Hero Section - Project 1 */
+.hero--project_1 {
+    height: 42vh;
+}
+
+.hero__name--project_1 {
+    padding-top: 0;
+}
+
+
 /* ------------------------------------------------------------ Work */
 .work {
     position: relative;
@@ -514,6 +524,7 @@ body {
     gap: 2rem;
     z-index: 5;
     width: 100%;
+    padding-left: 6rem;
 }
 
 .news__title {
@@ -552,6 +563,10 @@ body {
     padding-left: 2rem;
 }
 
+.news__subtitle--dark,
+.news__text--dark {
+    color: var(--clr-dark-blue);
+}
 /* ------------------------------------------------------------ Footer */
 .footer {
     position: relative;
