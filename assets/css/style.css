@@ -423,10 +423,30 @@ body {
     flex-direction: column;
     align-items: start;
     justify-content: end;
-    padding: 1rem;
     background-color: var(--clr-light-grey);
     width: 45rem;
     aspect-ratio: 1;
+}
+
+.work__grid__box--start {
+    background-image: url('../images/hackathon-1-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.work__grid__box--mid {
+    background-image: url('../images/hackathon-2-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.work__grid__box--end {
+    background-image: url('../images/pasta-1-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .work__grid__number {
@@ -435,9 +455,95 @@ body {
     right: 1rem;
 }
 
+.work__grid__title {
+    background-color: var(--clr-light-grey);
+    padding: 1.5rem;
+}
 
 .work__grid__text {
-    padding-left: 1rem;
+    background-color: var(--clr-light-grey);
+    padding: 1.5rem;
+}
+
+/* ---------------------------------------------- Project 1 */
+.project__name {
+    line-height: 0;
+    padding-top: 1.75rem;
+    letter-spacing: 0;
+}
+
+.hero--project_1 {
+    height: 33vh;
+}
+
+.work__grid__box--img1 {
+    background-image: url('../images/hackathon-1-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.work__grid__box--img2 {
+    background-image: url('../images/hackathon-1-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.work__grid__box--img3 {
+    background-image: url('../images/hackathon-1-3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ---------------------------------------------- Project 2 */
+.work__grid__box--img4 {
+    background-image: url('../images/hackathon-2-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.work__grid__box--img5 {
+    background-image: url('../images/hackathon-2-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.work__grid__box--img6 {
+    background-image: url('../images/hackathon-2-3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ---------------------------------------------- Project 3 */
+.work__grid__box--img7 {
+    background-image: url('../images/pasta-1-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.work__grid__box--img8 {
+    background-image: url('../images/pasta-1-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.work__grid__box--img9 {
+    background-image: url('../images/pasta-1-3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ---------------------------------------------- News */
+.hero--news {
+    height: 33vh;
 }
 
 /* ------------------------------------------------------------ About me */
@@ -524,7 +630,6 @@ body {
     gap: 2rem;
     z-index: 5;
     width: 100%;
-    padding-left: 6rem;
 }
 
 .news__title {
@@ -655,7 +760,6 @@ body {
         flex-direction: column;
         align-items: start;
         justify-content: end;
-        padding: 1rem;
         background-color: var(--clr-light-grey);
         width: 45rem;
         aspect-ratio: 1;
@@ -725,7 +829,6 @@ body {
         flex-direction: column;
         align-items: start;
         justify-content: end;
-        padding: 1rem;
         background-color: var(--clr-light-grey);
         width: 45rem;
         aspect-ratio: 1;
@@ -873,6 +976,11 @@ body {
         width: 432.5px;
     }
 
+    .hero--project_1,
+    .hero--news {
+        height: 25vh;
+    }
+
     /* ------------------------------------------------------ Work Section */
     .work__grid {
         flex-direction: column;
@@ -881,7 +989,6 @@ body {
     }
 
     .work__grid__box {
-        padding: 3rem 1.5rem;
         width: 100%;
     }
 
@@ -997,6 +1104,8 @@ body {
     }
 
     .mobile-navigation {
+        position: fixed;
+        z-index: 7999;
         display: flex;
         justify-content: space-between;
         padding: 1rem 2.5rem;
@@ -1075,7 +1184,9 @@ body {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 1.5rem;
+        padding-top: 6rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .hero__profile-img {
@@ -1095,7 +1206,6 @@ body {
     }
 
     .work__grid__box {
-        padding: 3rem 2rem;
         width: 100%;
     }
 
@@ -1104,7 +1214,7 @@ body {
     }
     
     .work__grid__text {
-        margin-top: 2rem;
+        display: none;
     }
 
     /* ------------------------------------------------------ About Section */
