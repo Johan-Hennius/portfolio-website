@@ -267,7 +267,7 @@ body {
 }
 
 .active {
-    color: var(--clr-light-blue);
+    color: var(--clr-yellow);
 }
 
 /* Navigation List__item rotate hover effect */
@@ -421,7 +421,7 @@ body {
 
 .work__grid__number {
     position: absolute;
-    top: -5.5rem;
+    top: -6.5rem;
     right: 1rem;
 }
 
@@ -724,7 +724,7 @@ body {
     
     .work__grid__number {
         position: absolute;
-        top: -5.5rem;
+        top: -4.2rem;
         right: 1rem;
     }
     
