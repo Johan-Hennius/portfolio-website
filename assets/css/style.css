@@ -611,6 +611,26 @@ body {
     grid-column: 2 / 4;
 }
 
+.about-me__title--project1 {
+    padding: 2rem 0;
+}
+
+.about-me__text--project1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.project1__links {
+    align-self: center;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
 /* ------------------------------------------------------------ News */
 .news {
     position: relative;
@@ -665,7 +685,6 @@ body {
 
 .news__text {
     color: var(--clr-light-grey);
-    padding-left: 2rem;
 }
 
 .news__subtitle--dark,
@@ -1219,7 +1238,7 @@ body {
 
     /* ------------------------------------------------------ About Section */
     .about-me {
-        padding: 4rem 1.5rem;
+        padding: 2.5rem;
     }
 
     .about-me__line {
