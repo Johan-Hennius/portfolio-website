@@ -573,8 +573,7 @@ body {
 }
 
 .about-me__text {
-    width: 90%;
-    margin: 0 auto;
+    width: 66%;
     padding: 4rem 0;
 }
 
@@ -584,7 +583,6 @@ body {
     align-items: center;
     gap: 2rem;
     width: 90%;
-    margin: 0 auto;
 }
 
 .about-me__flex {
@@ -878,6 +876,10 @@ body {
     /* ------------------------------------------------------ About Section */
     .span-2__column {
         padding-left: 0.5rem;
+    }
+
+    .about-me__text {
+        width: 100%;
     }
 
     /* ------------------------------------------------------ News Section */ 
