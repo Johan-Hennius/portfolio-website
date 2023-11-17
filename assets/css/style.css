@@ -358,8 +358,9 @@ body {
 .hero {
     display: flex;
     justify-content: space-between;
-    height: 91vh;
+    height: 91svh;
     padding: 12rem 8rem 5rem 8rem;
+    gap: 2rem;
 }
 
 .hero__title__wrapper {
@@ -367,12 +368,15 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    min-width: 50%;
 }
 
 
 /* Hero Section Image */
 .hero__profile-img {
-    height: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
     z-index: -1;
     transform-origin: 0 100%;
     transition: height 1s cubic-bezier(.37, 0, .45, .99);
@@ -391,13 +395,17 @@ body {
 
 /* --------------------------------------------------------------------------- Hero Section - Project 1 */
 .hero--project_1 {
-    height: 42vh;
+    height: 42svh;
 }
 
 .hero__name--project_1 {
     padding-top: 0;
 }
 
+/* ---------------------------------------------- Hero section - News */
+.hero--news {
+    height: 33svh;
+}
 
 /* ------------------------------------------------------------ Work */
 .work {
@@ -443,7 +451,7 @@ body {
 }
 
 .work__grid__box--end {
-    background-image: url('../images/pasta-1-1.png');
+    background-image: url('');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -473,7 +481,7 @@ body {
 }
 
 .hero--project_1 {
-    height: 33vh;
+    height: 33svh;
 }
 
 .work__grid__box--img1 {
@@ -521,29 +529,24 @@ body {
 
 /* ---------------------------------------------- Project 3 */
 .work__grid__box--img7 {
-    background-image: url('../images/pasta-1-2.png');
+    background-image: url('');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .work__grid__box--img8 {
-    background-image: url('../images/pasta-1-1.png');
+    background-image: url('');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .work__grid__box--img9 {
-    background-image: url('../images/pasta-1-3.png');
+    background-image: url('');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-/* ---------------------------------------------- News */
-.hero--news {
-    height: 33vh;
 }
 
 /* ------------------------------------------------------------ About me */
@@ -867,7 +870,7 @@ body {
     
     
     .work__grid__text {
-        padding-left: 1rem;
+        display: none;
     }
 
     /* ------------------------------------------------------ About Section */
@@ -987,6 +990,7 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 1rem 8rem;
+        height: 80svh;
     }
 
     .hero__profile-img {
@@ -1206,6 +1210,7 @@ body {
         padding-top: 6rem;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        height: 92svh;
     }
 
     .hero__profile-img {
