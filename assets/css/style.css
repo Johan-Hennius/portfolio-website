@@ -1001,7 +1001,8 @@ body {
 
     .hero__profile-img {
         object-fit: cover;
-        width: 432.5px;
+        width: 100%;
+        height: auto;
     }
 
     .hero--project_1,
