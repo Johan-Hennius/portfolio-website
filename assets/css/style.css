@@ -214,6 +214,7 @@ body {
 .diagonal-bg__horizontal {
     position: relative;
     isolation: isolate;
+    z-index: -6999;
 }
 
 .diagonal-bg__horizontal::after {
@@ -377,7 +378,7 @@ body {
     height: auto;
     width: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -7999;
     transform-origin: 0 100%;
     transition: height 1s cubic-bezier(.37, 0, .45, .99);
 }
@@ -459,11 +460,12 @@ body {
 
 .work__grid__number {
     position: absolute;
-    top: -6.5rem;
+    top: -6rem;
     right: 1rem;
 }
 
 .work__grid__title {
+    display: none;
     background-color: var(--clr-light-grey);
     padding: 1.5rem;
 }
@@ -789,7 +791,7 @@ body {
         
     .work__grid__number {
         position: absolute;
-        top: -5.5rem;
+        top: -4.8rem;
         right: 1rem;
     }    
     
@@ -864,7 +866,7 @@ body {
     
     .work__grid__number {
         position: absolute;
-        top: -4.2rem;
+        top: -3.5rem;
         right: 1rem;
     }
     
@@ -911,6 +913,7 @@ body {
     }
 
     .mobile-navigation {
+        position: fixed;
         display: flex;
         justify-content: space-between;
         padding: 1.5rem 8rem;
@@ -934,8 +937,8 @@ body {
     .mobile-navigation__list {
         display: block;
         position: fixed;
-        z-index: 1000;
-        inset: 0 0 0 25%;
+        z-index: 8999;
+        inset: 0 0 0 0;
 
         background-color: var(--clr-dark-blue);
         backdrop-filter: blur(1.25rem);
@@ -989,12 +992,14 @@ body {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 8rem;
-        height: 80svh;
+        height: 85svh;
+        padding-top: 15%;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-bottom: 1rem;
     }
 
     .hero__profile-img {
-        margin-top: 3.2rem;
         object-fit: cover;
         width: 432.5px;
     }
@@ -1016,7 +1021,7 @@ body {
     }
 
     .work__grid__number {
-        top: -4.2rem;
+        top: -3.5rem;
     }
 
     /* ------------------------------------------------------ About Section */
@@ -1118,14 +1123,6 @@ body {
     }
 
     /* ------------------------------------------------------ Navigation Section */
-    .primary-navigation {
-        display: none;
-    } 
-
-    .primary-navigation__logo {
-        display: none;
-    }
-
     .mobile-navigation {
         position: fixed;
         z-index: 7999;
@@ -1153,7 +1150,7 @@ body {
         display: block;
         position: fixed;
         z-index: 1000;
-        inset: 0 0 0 25%;
+        inset: 0 0 0 0;
 
         background-color: var(--clr-dark-blue);
         backdrop-filter: blur(1.25rem);
@@ -1207,14 +1204,13 @@ body {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding-top: 6rem;
+        padding-top: 30%;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         height: 92svh;
     }
 
     .hero__profile-img {
-        margin-top: 3.2rem;
         object-fit: cover;
     }
 
