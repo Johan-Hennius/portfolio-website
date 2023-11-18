@@ -977,6 +977,7 @@ body {
 
     .mobile-navigation {
         position: fixed;
+        z-index: 7999;
         display: flex;
         justify-content: space-between;
         padding: 1.5rem 8rem;
@@ -987,10 +988,14 @@ body {
         display: block;
         z-index: 9999;
         font-size: 1.5rem;
-        width: 2.5rem;
+        width: 3.5rem;
         aspect-ratio: 1;
         border: none;
         background: none;
+        font-family: var(--font-family-secondary);
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-regular);
+        transition: all 500ms cubic-bezier(.37, 0, .45, .99);
     }
 
     .mobile-navigation__logo {
@@ -1203,10 +1208,13 @@ body {
         display: block;
         z-index: 9999;
         font-size: 1.5rem;
-        width: 2.5rem;
+        width: 3.5rem;
         aspect-ratio: 1;
         border: none;
         background: none;
+        font-family: var(--font-family-secondary);
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-regular);
         transition: all 500ms cubic-bezier(.37, 0, .45, .99);
     }
 
