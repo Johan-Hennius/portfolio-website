@@ -58,25 +58,25 @@
                 </div>
                 <!--nav toggle-->
                 <button class="mobile-nav-toggle" aria-controls="mobile-navigation" aria-expanded="false"><span
-                        class="sr-only">Menu</span>Menu</i></button>
+                        class="sr-only">Menu</span>M</button>
                 <!--Nav List-->
                 <ul class="mobile-navigation__list" role="list" data-visible="false">
                     <li>
                         <a href="index.html" class="primary-navigation__item active">Home</a>
                     </li>
                     <li>
-                        <a href="#work-section" class="primary-navigation__item">Work</a>
+                        <a href="project_1.html" class="primary-navigation__item">Work</a>
                     </li>
                     <li>
                         <a href="#about-section" class="primary-navigation__item">About</a>
                     </li>
                     <li>
-                        <a href="#news-section" class="primary-navigation__item">News</a>
+                        <a href="news.html" class="primary-navigation__item">News</a>
                     </li>
                     <!--Contact-->
                     <li>
                         <div class="primary-navigation__button">
-                            <span class="button__text">Contact</span>
+                            <span class="button__text"><a href="mailto:johanbhennius@outlook.com">Contact</a></span>
                         </div>
                     </li>
                 </ul>
@@ -87,43 +87,43 @@
         <section class="hero">
             <div class="hero__title__wrapper">
                 <div class="hero__titles">
-                    <h2 class="hero__title title__large">Developer</h2>
-                    <h2 class="hero__title hero__designer title__large">Designer</h2>
+                    <h2 class="hero__title title__large hiddenX">Developer</h2>
+                    <h2 class="hero__title hero__designer title__large hiddenX">Designer</h2>
                 </div>
-                <h1 class="hero__name title__medium-large">Johan B Hennius</h1>
+                <h1 class="hero__name title__medium-large hiddenX">Johan B Hennius</h1>
             </div>
-            <img src="assets/images/jbh-photo-w723-h1086.png" alt="Photo of Johan B Hennius sitting in a garden" srcset="assets/images/jbh-photo-w723-h1086.png 723w"
-                class="hero__profile-img">
+            <img src="assets/images/jbh-photo-w723-h1086.png" alt="Photo of Johan B Hennius sitting in a garden"
+                srcset="assets/images/jbh-photo-w723-h1086.png 723w" class="hero__profile-img hidden">
         </section>
 
         <!--Work section-->
         <section class="work diagonal-bg__horizontal" id="work-section">
-            <h2 class="sr-only">
+            <h2 class="sr-only hidden">
                 Work
             </h2>
-            <div class="work__grid">
-                <a href="project_1.html" class="work__grid__box work__grid__box--start">
-                    <div href="project_1.html">
-                        <h3 class="work__grid__number title__large">Site</h3>
-                        <p class="work__grid__title sub-title">Website</p>
-                        <p class="work__grid__text text__xsmall">Static website for an online coding school. Designed
-                            and built during first hackathon using HTML | CSS | Bootstrap.</p>
-                    </div>
+            <div class="work__grid hidden">
+                <a href="project_1.html" class="work__grid__box work__grid__box--start hidden">
+
+                    <h3 class="work__grid__number title__large">Site</h3>
+                    <p class="work__grid__title sub-title">Website</p>
+                    <p class="work__grid__text text__xsmall">Static website for an online coding school. Designed
+                        and built during first hackathon using HTML | CSS | Bootstrap.</p>
+
                 </a>
-                <a href="project_2.html" class="work__grid__box work__grid__box--mid">
-                    <div>
+                <a href="project_2.html" class="work__grid__box work__grid__box--mid hidden">
+                    
                         <h3 class="work__grid__number title__large">App</h3>
                         <p class="work__grid__title sub-title">App</p>
                         <p class="work__grid__text text__xsmall">JavaScript calculator. Designed and built during second
                             hackathon using HTML | CSS | Javascript.</p>
-                    </div>
+                    
                 </a>
-                <a href="project_3.html" class="work__grid__box work__grid__box--end">
-                    <div>
+                <a href="project_3.html" class="work__grid__box work__grid__box--end hidden">
+                    
                         <h3 class="work__grid__number title__large">Site</h3>
                         <p class="work__grid__title sub-title">Website</p>
                         <p class="work__grid__text text__xsmall">Full-Stack Website. Coming Soon.</p>
-                    </div>
+                    
                 </a>
             </div>
         </section>
@@ -131,16 +131,17 @@
         <!--About me section-->
         <section class="about-me" id="about-section">
             <div class="about-me__title__wrapper">
-                <h2 class="about-me__title title__large">About me</h2>
+                <h2 class="about-me__title title__large hiddenX">About me</h2>
             </div>
-            <div class="about-me__text sub-title">
+            <div class="about-me__text sub-title hiddenX">
                 Junior software developer studying full stack software development at the Code Institute. With 6
                 years experience in the design and animation Industry. Desire to grow as part of a team to utilise my
-                strong creative thinking, problem solving, and communication skills to create products that have a positive
+                strong creative thinking, problem solving, and communication skills to create products that have a
+                positive
                 impact on our world.
             </div>
             <div class="about-me__grid about-me__flex-wrapper">
-                <div class="about-me__flex">
+                <div class="about-me__flex hidden">
                     <h3 class="about-me__grid__title--1 sub-title">Software Development</h3>
                     <div class="about-me__details__grid">
                         <h4 class="text__xsmall text__xsmall--bold">Technologies</h4>
@@ -153,7 +154,7 @@
                         <p class="text__xsmall span-2__column">Git, GitHub</p>
                     </div>
                 </div>
-                <div class="about-me__flex">
+                <div class="about-me__flex hidden">
                     <h3 class="about-me__grid__title--2 sub-title">Design</h3>
                     <div class="about-me__details__grid">
                         <h4 class="text__xsmall text__xsmall--bold">Software</h4>
@@ -168,14 +169,14 @@
 
         <!--News section-->
         <section class="news diagonal-bg__horizontal" id="news-section">
-            <h2 class="news__title title__large">News</h2>
-            <div class="news__grid">
+            <h2 class="news__title title__large hiddenX">News</h2>
+            <div class="news__grid hidden">
                 <div class="news__image">
                     <a href="news.html">
                         <img src="assets/logos/jbh-logo-140px.png" alt="Alt text">
                     </a>
                 </div>
-                <div class="news__wrapper">
+                <div class="news__wrapper hidden">
                     <h3 class="news__subtitle sub-title">
                         Why change?
                     </h3>

@@ -128,11 +128,15 @@ body {
     overflow-x: hidden;
 }
 
+.project1__links a:hover {
+    color: var(--clr-yellow)
+}
+
 .title__xlarge {
     color: var(--clr-dark-blue);
     font-family: var(--font-family-primary);
     font-size: var(--font-size-xlarge);
-    font-weight: var(--font-weight-bold); 
+    font-weight: var(--font-weight-bold);
     letter-spacing: -0.5rem;
 }
 
@@ -181,16 +185,12 @@ body {
 /* ------------------------------------------------------------ Background */
 .background__graph-paper {
     background-color: #fafafa;
-    background-image: 
-        linear-gradient(
+    background-image:
+        linear-gradient(var(--clr-dark-blue) 3px,
+            transparent 0.5px),
+        linear-gradient(90deg,
             var(--clr-dark-blue) 3px,
-            transparent 0.5px
-        ),
-        linear-gradient(
-            90deg,
-            var(--clr-dark-blue) 3px,
-            transparent 0.5px
-        );
+            transparent 0.5px);
     background-size: 2rem 2rem;
     background-position: center;
     z-index: -9999;
@@ -389,7 +389,7 @@ body {
     padding-left: 4.6rem;
 }
 
-.hero__name {    
+.hero__name {
     line-height: 7.2rem;
     padding-top: 4rem;
 }
@@ -473,6 +473,14 @@ body {
 .work__grid__text {
     background-color: var(--clr-light-grey);
     padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 500ms cubic-bezier(.37, 0, .45, .99);
+}
+
+.work__grid__box--start:hover p,
+.work__grid__box--mid:hover p,
+.work__grid__box--end:hover p {
+    opacity: 1;
 }
 
 /* ---------------------------------------------- Project 1 */
@@ -694,6 +702,7 @@ body {
 .news__text--dark {
     color: var(--clr-dark-blue);
 }
+
 /* ------------------------------------------------------------ Footer */
 .footer {
     position: relative;
@@ -725,8 +734,12 @@ body {
 
 }
 
-.footer__contact-links > a {
+.footer__contact-links>a {
     color: var(--clr-light-grey);
+}
+
+.footer__contact-links>a:hover {
+    color: var(--clr-yellow);
 }
 
 .footer__copyright {
@@ -742,32 +755,85 @@ body {
 }
 
 /* --------------------------------------------------------------------------- Media Queries */
+/* Animation */
+.hidden {
+    opacity: 0;
+    filter: blur(7px);
+    transform: translateY(5%);
+    transition:
+        all 850ms cubic-bezier(.37, 0, .45, .99);
+}
+
+.hiddenX {
+    opacity: 0;
+    filter: blur(7px);
+    transform: translateX(-5%);
+    transition:
+        all 850ms cubic-bezier(.37, 0, .45, .99);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: 
+        translate(0);
+}
+
+.hero__profile-img,
+.hero__designer,
+.work__grid__box--mid,
+.about-me__flex:nth-child(2),
+.news__text,
+.news__image,
+.project__name,
+.about-me__title--project1,
+.about-me__text--project1 {
+    transition-delay: 150ms;
+}
+
+.hero__name,
+.work__grid__box--end,
+.news__subtitle {
+    transition-delay: 250ms;
+}
+
+.news__text {
+    transition-delay: 350ms;
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+
 /* XLarge screen */
 @media (max-width: 1920px) {
     :root {
         /* Desktop font sizes */
-    --font-size-xsmall: 1rem;
-    --font-size-small: 1.5rem;
-    --font-size-medium: 2.5rem;
-    --font-size-mediumLarge: 4.8rem;
-    --font-size-large: 7.5rem;
-    --font-size-xlarge: 10rem;
+        --font-size-xsmall: 1rem;
+        --font-size-small: 1.5rem;
+        --font-size-medium: 2.5rem;
+        --font-size-mediumLarge: 4.8rem;
+        --font-size-large: 7.5rem;
+        --font-size-xlarge: 10rem;
     }
 
     /* ------------------------------------------------------ Hero Section */
     /* Hero Section Titles */
     .hero__designer {
         line-height: 4rem;
-        padding-left: 3.6rem;        
+        padding-left: 3.6rem;
     }
 
-    .hero__name {    
+    .hero__name {
         line-height: 3.5rem;
         padding-top: 3.5rem;
         letter-spacing: -0.43rem;
     }
 
-    /* ------------------------------------------------------ Work Section */   
+    /* ------------------------------------------------------ Work Section */
     .work__grid {
         display: flex;
         justify-content: space-between;
@@ -775,7 +841,7 @@ body {
         gap: 2rem;
         width: 100%;
     }
-    
+
     .work__grid__box {
         position: relative;
         display: flex;
@@ -786,13 +852,13 @@ body {
         width: 45rem;
         aspect-ratio: 1;
     }
-        
+
     .work__grid__number {
         position: absolute;
         top: -4.8rem;
         right: 1rem;
-    }    
-    
+    }
+
     .work__grid__text {
         padding-left: 1rem;
     }
@@ -815,28 +881,28 @@ body {
 @media (max-width: 1280px) {
     :root {
         /* Desktop font sizes */
-    --font-size-xsmall: 1rem;
-    --font-size-small: 1.3rem;
-    --font-size-medium: 2.5rem;
-    --font-size-mediumLarge: 3.2rem;
-    --font-size-large: 5.5rem;
-    --font-size-xlarge: 7.5rem;
+        --font-size-xsmall: 1rem;
+        --font-size-small: 1.3rem;
+        --font-size-medium: 2.5rem;
+        --font-size-mediumLarge: 3.2rem;
+        --font-size-large: 5.5rem;
+        --font-size-xlarge: 7.5rem;
     }
 
     /* ------------------------------------------------------ Hero Section */
     /* Hero Section Titles */
     .hero__designer {
         line-height: 3rem;
-        padding-left: 2.5rem;        
+        padding-left: 2.5rem;
     }
 
-    .hero__name {    
+    .hero__name {
         line-height: 2.4rem;
         padding-top: 2.4rem;
         letter-spacing: -0.2rem;
     }
 
-    /* ------------------------------------------------------ Work Section */   
+    /* ------------------------------------------------------ Work Section */
     .work__grid {
         display: flex;
         justify-content: space-between;
@@ -844,7 +910,7 @@ body {
         gap: 2rem;
         width: 100%
     }
-    
+
     .work__grid__box {
         position: relative;
         display: flex;
@@ -855,22 +921,17 @@ body {
         width: 45rem;
         aspect-ratio: 1;
     }
-    
+
     .work__title {
         position: absolute;
         rotate: -90deg;
         left: 1.5%;
     }
-    
+
     .work__grid__number {
         position: absolute;
         top: -3.5rem;
         right: 1rem;
-    }
-    
-    
-    .work__grid__text {
-        display: none;
     }
 
     /* ------------------------------------------------------ About Section */
@@ -882,7 +943,7 @@ body {
         width: 100%;
     }
 
-    /* ------------------------------------------------------ News Section */ 
+    /* ------------------------------------------------------ News Section */
     .news__title {
         left: 1.5%;
     }
@@ -897,18 +958,18 @@ body {
 @media (max-width: 1120px) {
     :root {
         /* Desktop font sizes */
-    --font-size-xsmall: 1rem;
-    --font-size-small: 1.3rem;
-    --font-size-medium: 2.5rem;
-    --font-size-mediumLarge: 3.2rem;
-    --font-size-large: 5.5rem;
-    --font-size-xlarge: 7.5rem;
+        --font-size-xsmall: 1rem;
+        --font-size-small: 1.3rem;
+        --font-size-medium: 2.5rem;
+        --font-size-mediumLarge: 3.2rem;
+        --font-size-large: 5.5rem;
+        --font-size-xlarge: 7.5rem;
     }
 
     /* ------------------------------------------------------ Navigation Section */
     .primary-navigation {
         display: none;
-    } 
+    }
 
     .primary-navigation__logo {
         display: none;
@@ -919,6 +980,7 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 1.5rem 8rem;
+        width: 100%;
     }
 
     .mobile-nav-toggle {
@@ -957,7 +1019,7 @@ body {
         font-size: var(--font-size-mobile-xsmall);
 
         transform: translateX(100%);
-        transition: 
+        transition:
             transform 500ms cubic-bezier(.37, 0, .45, .99),
             box-shadow 500ms cubic-bezier(.37, 0, .45, .99);
     }
@@ -994,8 +1056,8 @@ body {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 85svh;
-        padding-top: 15%;
+        height: 93svh;
+        padding-top: 8rem;
         padding-left: 8rem;
         padding-right: 8rem;
         padding-bottom: 1rem;
@@ -1009,7 +1071,12 @@ body {
 
     .hero--project_1,
     .hero--news {
-        height: 25vh;
+        height: 40vh;
+    }
+
+    .hero__title__wrapper--news {
+        align-items: center;
+        justify-content: center;
     }
 
     /* ------------------------------------------------------ Work Section */
@@ -1055,6 +1122,7 @@ body {
         padding-top: 4rem;
         padding-bottom: 7rem;
     }
+
     .news__grid {
         flex-direction: column;
         width: 100%;
@@ -1089,27 +1157,23 @@ body {
 @media (max-width: 720px) {
     :root {
         /* Desktop font sizes */
-    --font-size-xsmall: 1rem;
-    --font-size-small: 1.2rem;
-    --font-size-medium: 2.5rem;
-    --font-size-mediumLarge: 2.8rem;
-    --font-size-large: 4.8rem;
-    --font-size-xlarge: 5.5rem;
+        --font-size-xsmall: 1rem;
+        --font-size-small: 1.2rem;
+        --font-size-medium: 2.5rem;
+        --font-size-mediumLarge: 2.8rem;
+        --font-size-large: 4.8rem;
+        --font-size-xlarge: 5.5rem;
     }
 
     /* ------------------------------------------------------ General Section */
     .background__graph-paper {
         background-color: #fafafa;
-        background-image: 
-            linear-gradient(
+        background-image:
+            linear-gradient(var(--clr-dark-blue) 3px,
+                transparent 0.2px),
+            linear-gradient(90deg,
                 var(--clr-dark-blue) 3px,
-                transparent 0.2px
-            ),
-            linear-gradient(
-                90deg,
-                var(--clr-dark-blue) 3px,
-                transparent 0.2px
-            );
+                transparent 0.2px);
         background-size: 2rem 2rem;
         background-position: center;
         z-index: -9999;
@@ -1132,6 +1196,7 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 1rem 2.5rem;
+        width: 100%;
     }
 
     .mobile-nav-toggle {
@@ -1142,6 +1207,7 @@ body {
         aspect-ratio: 1;
         border: none;
         background: none;
+        transition: all 500ms cubic-bezier(.37, 0, .45, .99);
     }
 
     .mobile-navigation__logo {
@@ -1170,7 +1236,7 @@ body {
         font-size: var(--font-size-mobile-xsmall);
 
         transform: translateX(100%);
-        transition: 
+        transition:
             transform 500ms cubic-bezier(.37, 0, .45, .99),
             box-shadow 500ms cubic-bezier(.37, 0, .45, .99);
     }
@@ -1207,9 +1273,9 @@ body {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding-top: 30%;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-top: 7rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         height: 92svh;
     }
 
@@ -1221,6 +1287,12 @@ body {
         line-height: 2.5rem;
         padding-left: 2.1rem;
     }
+
+    .hero--project_1,
+    .hero--news {
+        height: 40svh;
+    }
+
     /* ------------------------------------------------------ Work Section */
     .work__grid {
         flex-direction: column;
@@ -1234,10 +1306,6 @@ body {
 
     .work__grid__number {
         top: -3rem;
-    }
-    
-    .work__grid__text {
-        display: none;
     }
 
     /* ------------------------------------------------------ About Section */
@@ -1259,9 +1327,10 @@ body {
     .news {
         padding-top: 4rem;
         padding-bottom: 7rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
+
     .news__grid {
         flex-direction: column;
         width: 100%;
@@ -1290,7 +1359,7 @@ body {
 
     .footer-navigation__logo {
         margin: 0;
-        order: 2;        
+        order: 2;
     }
 
     .footer__copyright {

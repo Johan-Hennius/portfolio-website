@@ -35,8 +35,26 @@ navToggle.addEventListener("click", () => {
     if (visibility === "false") {
         primaryNav.setAttribute("data-visible", true);
         navToggle.setAttribute("aria-expanded", true);
+        navToggle.style.color="var(--clr-light-grey)";
     } else if (visibility === "true") {
         primaryNav.setAttribute("data-visible", false);
         navToggle.setAttribute("aria-expanded", false);
+        navToggle.style.color="var(--clr-dark-blue)";
     }
 });
+
+// Mobile navigation reveal animation
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show");
+        }
+    })
+})
+
+const hiddenElements = document.querySelectorAll(".hidden, .hiddenX");
+hiddenElements.forEach((el) => observer.observe(el));
+
+
