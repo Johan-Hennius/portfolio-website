@@ -23,7 +23,7 @@ Create a website where i can showcase my favourite portfolio pieces with the web
 
 The first stage in this design process was to figure out my user stories. I decided to keep it simple.
 
-     "As an empployer i want to clearly see a future employees skills so that i can decided if they are suitable for the role"
+"As an empployer i want to clearly see a future employees skills so that i can decided if they are suitable for the role"
 
 This gave me some clear guidelines for the site features. After this was done, i went on to  looking at suitable points of inspiration. 
 
