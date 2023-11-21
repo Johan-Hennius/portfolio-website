@@ -5,7 +5,7 @@ V1 - 21/11/2023
 A portfolio website where i try out new techniques while showcasing some of my favourite projects. 
 
 
-![Image of initial website design](assets/images/site-design.png)
+![Image of initial website design](assets/images/site-design.png)  
 
 ## Specifications
 
@@ -27,10 +27,10 @@ The first stage in this design process was to figure out my user stories. I deci
 
 This gave me some clear guidelines for the site features. After this was done, i went on to  looking at suitable points of inspiration. 
 
-[https://designdough.co.uk/](designdough)
-[https://www.torebentsen.com/](Tore S Bentsen)
-[https://www.boldscandinavia.com/](Bold Scandinavia)
-[https://www.pinterest.co.uk/johanbhennius/web-dev/](Pinterest)
+[designdough](https://designdough.co.uk/)  
+[Tore S Bentsen](https://www.torebentsen.com/)  
+[Bold Scandinavia](https://www.boldscandinavia.com/)  
+[Pinterest](https://www.pinterest.co.uk/johanbhennius/web-dev/)  
 
 These incerdible sources of inspiration filled my mind with ideas. I took to Adobe XD and began designing.
 
@@ -43,9 +43,9 @@ In order to push myself with this build, i set some targets:
 - Animate navbar text using JavaScript.
 - Utilise Grid and flexbox efficiently.
 
-I began building the project by trying focus on the basic structure. Once everything was in place, i focused on styling, and eventually animation. 
-It's difficult to stick to this workflow and in all honesty, im unsure if it is the most efficient... 
-The main difficulty is keeping yourself focused and disciplined so that the focus is on the immediate bite-sized task at hand. 
+I began building the project by trying focus on the basic structure. Once everything was in place, i focused on styling, and eventually animation.   
+It's difficult to stick to this workflow and in all honesty, im unsure if it is the most efficient...   
+The main difficulty is keeping yourself focused and disciplined so that the focus is on the immediate bite-sized task at hand.   
 I think that this is something which will improve with time and dedication. 
 
 ## Issues
@@ -61,7 +61,7 @@ I think that this is something which will improve with time and dedication.
 
 ## Acknowledgements
 
-[https://www.youtube.com/@KevinPowell](Kevin Powell)
-[https://www.youtube.com/@WebDevSimplified](Web Dev Simplified)
-[https://www.youtube.com/@codegrid](Code Grid)
-[https://www.youtube.com/@beyondfireship](Beyond Fireship)
+[Kevin Powell](https://www.youtube.com/@KevinPowell)  
+[Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)  
+[codegrid](https://www.youtube.com/@codegrid)  
+[Beyond Fireship](https://www.youtube.com/@beyondfireship)  
