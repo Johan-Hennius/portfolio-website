@@ -58,6 +58,7 @@ I think that this is something which will improve with time and dedication.
 
 - Adjust news section to improve proportions and responsive behaviour.
 - Utilise responsive font sizes with clamp().
+- Navbar - add background and disappear/reappear on scroll 
 
 ## Acknowledgements
 
