@@ -234,8 +234,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 8rem;
-    margin-top: 1.5rem;
+    padding: 1rem 8rem;
+    background-color: var(--clr-light-grey);
     font: var(--font-family-body);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-xsmall);
@@ -980,8 +980,9 @@ body {
         z-index: 7999;
         display: flex;
         justify-content: space-between;
-        padding: 1.5rem 8rem;
+        padding: 0rem 8rem;
         width: 100%;
+        background-color: var(--clr-light-grey);
     }
 
     .mobile-nav-toggle {
@@ -1062,7 +1063,7 @@ body {
         justify-content: space-between;
         align-items: center;
         height: 93svh;
-        padding-top: 8rem;
+        padding-top: 10rem;
         padding-left: 8rem;
         padding-right: 8rem;
         padding-bottom: 1rem;
@@ -1200,7 +1201,7 @@ body {
         z-index: 7999;
         display: flex;
         justify-content: space-between;
-        padding: 1rem 2.5rem;
+        padding: 0 2.5rem;
         width: 100%;
     }
 
