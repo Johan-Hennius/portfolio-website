@@ -1,5 +1,6 @@
 # portfolio-website
 
+V2 - 23/11/2023
 V1 - 21/11/2023
 
 A portfolio website where i try out new techniques while showcasing some of my favourite projects. 
