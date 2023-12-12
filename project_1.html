@@ -45,7 +45,8 @@
                 </ul>
                 <!--Contact-->
                 <div class="primary-navigation__button">
-                    <span class="button__text"><a href="mailto:johanbhennius@outlook.com" aria-label="Linked - Opens email software">Contact</a></span>
+                    <span class="button__text"><a href="mailto:johanbhennius@outlook.com"
+                            aria-label="Linked - Opens email software">Contact</a></span>
                 </div>
             </nav>
             <!--Mobile Nav-->
@@ -76,7 +77,8 @@
                     <!--Contact-->
                     <li>
                         <div class="primary-navigation__button">
-                            <span class="button__text"><a href="mailto:johanbhennius@outlook.com" aria-label="Linked - Opens email software">Contact</a></span>
+                            <span class="button__text"><a href="mailto:johanbhennius@outlook.com"
+                                    aria-label="Linked - Opens email software">Contact</a></span>
                         </div>
                     </li>
                 </ul>
@@ -89,7 +91,7 @@
                 <div class="hero__titles">
                     <h2 class="hero__title title__large hiddenX">Project 1</h2>
                 </div>
-                <h1 class="project__name project__name--project_1 sub-title hiddenX">Online Coding School</h1>
+                <h1 class="project__name project__name--project_1 sub-title hiddenX">Tattoo Artist Website</h1>
             </div>
         </section>
 
@@ -116,60 +118,61 @@
             </div>
             <div class="about-me__text--project1 sub-title hidden">
                 <p>
-                    HTML | CSS | Bootstrap
+                    HTML | CSS | Javascript | Python | Django | Bootstrap
                 </p>
                 <p>
-                    Becoming a full-stack developer at Code Institute involved taking part in group hackathons. For our
-                    first hackathon, we were split into teams of 3 and 4. I was placed into a team of 3 and we were
-                    given a
-                    brief which asked us to create a static website using HTML, CSS, and Bootstrap for an online coding
-                    school in 3 days. We had to create user stories, the website’s wireframe, build the website, track
-                    progress using a project board on GitHub, utilised Git for our code management, followed an agile
-                    workflow, and adhered to the principles of UX design.
+                    My final project on the full-stack developer course at Code Institute required me to build a web
+                    application in 7 days. This capstone project was to be completed alone with the guidance of an
+                    allocated mentor (4x 1-hour meetings) using all my knowledge of HTML, CSS, JavaScript, Python, and
+                    Django. I decided to build the MVP web application for a local tattoo artist “Kit Wagstaff” so that
+                    their clients had access to an intuitive appointment booking system instead of booking through
+                    Instagram's chat feature. This meant that Kit would have quicker access to the relevant appointment
+                    information to help improve their business management and ultimately allow her to spend more time on
+                    designs and improving her craft. The web application would also include portfolio, about, terms and
+                    conditions, and tattoo care pages.
                 </p>
                 <p>
-                    The project started off with a good old fashioned planning stage. We took our brief and as a group,
-                    decided on the business objectives of the product. We then came up with user stories and added them
-                    to a backlog in the form of a project board on GitHub. We did this to break our project into
-                    bite-sized chunks using our user stories as a guide and created achievable, key milestones. Once we
-                    were happy that we had covered everything for the MVP along with some nice-to-have functionality, we
-                    moved on to the design stage.
+                    I took the basic requirements of the website and combined them with Kit's target audience:
+                    20-35-year-old female student or professional with an alternative style. They are climate conscious
+                    and a supporter of the LGBTQ+ community. The target audience information helped me to create user
+                    stories and the subsequent success criteria which dictated the necessary features and their
+                    importance. These user stories were made into issues on GitHub and then placed onto the project's
+                    Kanban board. I was then ready to move onto the design stage.
                 </p>
                 <p>
-                    The design stage involved taking our user stories and drawing up the website’s functions
-                    accordingly. I decided to use Adobe Illustrator to create the wireframe design. To create a final
-                    product that was visually appealing, intuitive, and achievable in the timeframe, I decided to use a
-                    minimalist design approach with accent colours on key items. This ensured that we could spend more
-                    time on the website’s functionality and responsiveness. After the designs were approved by all team
-                    members, we moved on to the build phase.
+                    To create a product which Kit would be happy to use, the style and feel of the website needed to
+                    represent her correctly. I researched them as a person and as an artist. I also asked if they had an
+                    idea of what style the website should follow - they provided me with a recently created gift
+                    voucher. This provided me with a general style guide and a strong colour palette. I was now ready to
+                    create the wireframes.
                 </p>
                 <p>
-                    We built the website by first creating a boilerplate template and copied over to each individual
-                    page. Each member took one page. We built using a mobile first approach by utilising Bootstrap’s
-                    quick column classes to ensure responsiveness was locked in at the start. Once this was complete, we
-                    deployed our website and starting squashing bugs. The main bug I faced was to do with the carousel.
-                    I wanted to edit the carousel so it would include a more defined caption section – this proved to be
-                    tricky as the font and their respective containers did not behave as intended. I fixed this by
-                    adjusting the width properties and font sizes with custom media queries. As a group, we would take
-                    time to review each other’s pages to speed up the bug hunt and ensure that we had a consistent
-                    design throughout the site.
+                    I created the wireframes in Adobe XD, concentrating on mobile, tablet, and desktop formats. However,
+                    to save time, I created the homepage layout for all three devices and then created the remaining
+                    pages in desktop format. Once the designs were approved, I requested a selection of Kit's favourite
+                    recent tattoo designs which I edited in Photoshop to reduce their file size and keep the dimensions
+                    constant.
                 </p>
                 <p>
-                    After the project was complete, we took part in a group retrospective. We found that our team worked
-                    efficiently due to our constant communication and willingness to help. Our knowledge of CSS and
-                    Bootstrap had also increased. The final product did not work completely as intended as certain
-                    features did not respond as well to the different breakpoints. However, we did learn how to avoid
-                    these issues in future by considering custom breakpoints early on.
+                    I began the build phase of the project by getting all the files and apps set up in Django. I created
+                    and linked my ElephantSQL database, Cloudinary account, and Heroku app to ensure an early
+                    deployment. The early deployment allowed me to find issues with the app early on. Once these issues
+                    were dealt with, I moved on to creating my model for the booking app, which were based off my
+                    initial ERDs. Once these models were migrated, I created my templates and adjusted my views
+                    accordingly. I decided to use function-based views as it was a more logical way of including the
+                    necessary steps in my code to process booking creations, edits, and deletes. I then created my model
+                    for the portfolio gallery along with adjusting the views and the templates. Once the basic
+                    functionality was working across the site, I concentrated on styling and eventually adding a small
+                    amount of scroll-reveal animation.
                 </p>
                 <p>
-                    The hackathon was a great experience as it showed us how capable we had become in such a short time.
-                    I learnt that communication and planning is key to achieve the intended goals of a project. I left
-                    the hackathon feeling inspired to learn more CSS techniques, so I could become an efficient asset to
-                    a team while also being able to help future team members with more advanced CSS techniques.
+                    Before submitting the project, I carried out extensive testing on the website's functionality,
+                    features, and defensive programming. If you wish to read through the documentation, it can be found
+                    on my GitHub repo - links below.
                 </p>
                 <p class="project1__links">
-                    <a href="https://github.com/welshman97/Hackathon1-Game-of-codes" target="_blank">GitHub</a>
-                    <a href="https://welshman97.github.io/Hackathon1-Game-of-codes/" target="_blank">Site</a>
+                    <a href="https://jbh19-kwt-website-6d772e1d0754.herokuapp.com/" target="_blank">GitHub</a>
+                    <a href="https://github.com/Johan-Hennius/kit-wagstaff-tattoo" target="_blank">Site</a>
                 </p>
             </div>
         </section>
@@ -177,20 +180,24 @@
         <!--Footer section-->
         <footer class="footer">
             <div class="footer__navigation">
-                <a href="index.html" class="footer-navigation__logo" aria-label="Linked - Johan B Hennius home page"> 
+                <a href="index.html" class="footer-navigation__logo" aria-label="Linked - Johan B Hennius home page">
                     <img src="assets/logos/jbh-logo-70px-lgrey-07.png" alt="Johan B Hennius black bear logo icon">
                 </a>
                 <span class="footer__copyright text__xsmall">&#169; Johan B Hennius</span>
                 <div class="footer__contact-links">
                     <a href="https://github.com/Johan-Hennius" target="_blank"
-                        class="footer__github--desktop text__xsmall" aria-label="Linked - Opens Johan B Hennius GitHub" rel="noopener">GitHub</a>
+                        class="footer__github--desktop text__xsmall" aria-label="Linked - Opens Johan B Hennius GitHub"
+                        rel="noopener">GitHub</a>
                     <a href="https://www.linkedin.com/in/johan-b-hennius/" target="_blank"
-                        class="footer__linkedin--desktop text__xsmall" aria-label="Linked - Opens Johan B Hennius LinkedIn" rel="noopener">LinkedIn</a>
-                    <a href="mailto:johanbhennius@outlook.com"
-                        class="footer__email text__xsmall" aria-label="Linked - Opens email software">johanbhennius@outlook.com</a>
+                        class="footer__linkedin--desktop text__xsmall"
+                        aria-label="Linked - Opens Johan B Hennius LinkedIn" rel="noopener">LinkedIn</a>
+                    <a href="mailto:johanbhennius@outlook.com" class="footer__email text__xsmall"
+                        aria-label="Linked - Opens email software">johanbhennius@outlook.com</a>
                 </div>
                 <div class="primary-navigation__button">
-                    <span class="button__text button__text--lgrey text__xsmall"><a href="assets/cv/johan-b-hennius-junior-full-stack-developer.pdf" target="_blank" aria-label="Linked - Opens Johan B Hennius CV">CV</a></span>
+                    <span class="button__text button__text--lgrey text__xsmall"><a
+                            href="assets/cv/johan-b-hennius-junior-full-stack-developer.pdf" target="_blank"
+                            aria-label="Linked - Opens Johan B Hennius CV">CV</a></span>
                 </div>
             </div>
         </footer>

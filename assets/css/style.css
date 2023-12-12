@@ -495,21 +495,21 @@ body {
 }
 
 .work__grid__box--img1 {
-    background-image: url('../images/hackathon-1-2.png');
+    background-image: url('../images/kwt-1.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .work__grid__box--img2 {
-    background-image: url('../images/hackathon-1-1.png');
+    background-image: url('../images/kwt-2.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .work__grid__box--img3 {
-    background-image: url('../images/hackathon-1-3.png');
+    background-image: url('../images/kwt-3.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -539,21 +539,21 @@ body {
 
 /* ---------------------------------------------- Project 3 */
 .work__grid__box--img7 {
-    background-image: url('');
+    background-image: url('../images/rr-1.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .work__grid__box--img8 {
-    background-image: url('');
+    background-image: url('../images/rr-2.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .work__grid__box--img9 {
-    background-image: url('');
+    background-image: url('../images/rr-3.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
